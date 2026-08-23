@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f6;
+  --foreground: #1a2222;
+  --card: #ffffff;
+  --card-foreground: #1a2222;
+  --border: #dcd8cf;
+
+  --primary: #0f5c5c;
+  --primary-foreground: #ffffff;
+  --primary-tint: #e4efee;
+
+  --warning: #b45309;
+  --warning-foreground: #ffffff;
+  --warning-tint: #fbebd9;
+
+  --success: #15803d;
+  --success-foreground: #ffffff;
+  --success-tint: #e2f3e8;
+
+  --error: #b91c1c;
+  --error-foreground: #ffffff;
+  --error-tint: #fbe4e4;
+
+  --muted: #6b7373;
+  --muted-tint: #eeece5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-tint: var(--primary-tint);
+
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-tint: var(--warning-tint);
+
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-tint: var(--success-tint);
+
+  --color-error: var(--error);
+  --color-error-foreground: var(--error-foreground);
+  --color-error-tint: var(--error-tint);
+
+  --color-muted: var(--muted);
+  --color-muted-tint: var(--muted-tint);
+
+  --font-sans: "Noto Sans", "Noto Sans Devanagari", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
