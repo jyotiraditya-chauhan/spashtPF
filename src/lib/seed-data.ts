@@ -138,3 +138,5 @@ export const seedClaims: Claim[] = [
     rejectionCode: "NAME_MISMATCH",
   },
 ];
+
+export const seedClaimIds = seedClaims.map((c) => c.id);
